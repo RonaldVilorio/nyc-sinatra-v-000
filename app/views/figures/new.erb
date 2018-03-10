@@ -17,13 +17,14 @@
 
   <label>Select Landmark/s:</label>
   <br>
+
   <%Landmark.all.each do |landmark|%>
     <li><input type="checkbox" name="figure[landmark_ids][]" value="<%=landmark.id%>" id="landmark_<%=landmark.id%>" ><label for="landmark[name]"><%=landmark.name%></label></li>
   <%end%>
 
   <br><br>
   <label>Enter Landmark:</label>
-  <input type="text" name="new_landmark" value="">
+  <input type="text" name="new_landmark" id="new_landmark">
 
   <br>
 
